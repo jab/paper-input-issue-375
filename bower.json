@@ -1,0 +1,24 @@
+{
+  "name": "paper-input-issue-375",
+  "homepage": "https://github.com/jab/paper-input-issue-375",
+  "authors": [
+    "jab <jab@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "paper-input": "^1.1.10",
+    "webshim": "^1.15.10",
+    "paper-button": "^1.0.11"
+  }
+}

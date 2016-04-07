@@ -1,0 +1,30 @@
+<head>
+  <title>Demonstration of paper-input#375</title>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/webshim/js-webshim/dev/polyfiller.js"></script>
+  <script>
+    (function () {
+      webshim.polyfill('forms');
+    }).call(this);
+  </script>
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link href="bower_components/polymer/polymer.html" rel="import">
+  <link href="bower_components/paper-input/paper-input.html" rel="import">
+  <link href="bower_components/paper-button/paper-button.html" rel="import">
+</head>
+<body>
+  <h1>Using Safari, Click Submit and Notice Polyfilled Error Bubbles Don't Work as Expected</h1>
+  <form action="#">
+    <paper-input placeholder="leave this blank (invalid)" required auto-validate></paper-input>
+    <paper-input placeholder="and/or leave this email input invalid" required auto-validate type="email"></paper-input>
+    <br>
+    <br>
+    <button type="submit" style="border: 0; padding: 0; background: transparent">
+      <paper-button raised tabindex="-1">Submit</paper-button>
+    </button>
+    <br>
+    <br>
+    <input type="submit" value="Happens with native submit button too">
+  </form>
+</body>
+
